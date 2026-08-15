@@ -1,0 +1,125 @@
+[
+  {
+    "id": "VT-DEMO-101-S01",
+    "requirement": "Admin can invite a valid email address",
+    "risk": "authorization",
+    "priority": "P1",
+    "preconditions": [
+      "Use isolated synthetic test data",
+      "Target service is healthy"
+    ],
+    "steps": [
+      "Arrange data for: Admin can invite a valid email address",
+      "Execute the relevant API or UI action",
+      "Capture response, state transition, and identifiers",
+      "Verify the resulting system state"
+    ],
+    "expected_result": "Admin can invite a valid email address",
+    "automation_candidate": true
+  },
+  {
+    "id": "VT-DEMO-101-S02",
+    "requirement": "Invited user is assigned to the selected organization",
+    "risk": "authorization",
+    "priority": "P1",
+    "preconditions": [
+      "Use isolated synthetic test data",
+      "Target service is healthy"
+    ],
+    "steps": [
+      "Arrange data for: Invited user is assigned to the selected organization",
+      "Execute the relevant API or UI action",
+      "Capture response, state transition, and identifiers",
+      "Verify the resulting system state"
+    ],
+    "expected_result": "Invited user is assigned to the selected organization",
+    "automation_candidate": true
+  },
+  {
+    "id": "VT-DEMO-101-S03",
+    "requirement": "Selected role is persisted",
+    "risk": "authorization",
+    "priority": "P1",
+    "preconditions": [
+      "Use isolated synthetic test data",
+      "Target service is healthy"
+    ],
+    "steps": [
+      "Arrange data for: Selected role is persisted",
+      "Execute the relevant API or UI action",
+      "Capture response, state transition, and identifiers",
+      "Verify the resulting system state"
+    ],
+    "expected_result": "Selected role is persisted",
+    "automation_candidate": true
+  },
+  {
+    "id": "VT-DEMO-101-S04",
+    "requirement": "Selected license is active",
+    "risk": "authorization",
+    "priority": "P0",
+    "preconditions": [
+      "Use isolated synthetic test data",
+      "Target service is healthy"
+    ],
+    "steps": [
+      "Arrange data for: Selected license is active",
+      "Execute the relevant API or UI action",
+      "Capture response, state transition, and identifiers",
+      "Verify the resulting system state"
+    ],
+    "expected_result": "Selected license is active",
+    "automation_candidate": true
+  },
+  {
+    "id": "VT-DEMO-101-S05",
+    "requirement": "Duplicate invitation is rejected",
+    "risk": "authorization",
+    "priority": "P0",
+    "preconditions": [
+      "Use isolated synthetic test data",
+      "Target service is healthy"
+    ],
+    "steps": [
+      "Arrange data for: Duplicate invitation is rejected",
+      "Execute the relevant API or UI action",
+      "Capture response, state transition, and identifiers",
+      "Verify the resulting system state"
+    ],
+    "expected_result": "Duplicate invitation is rejected",
+    "automation_candidate": true
+  },
+  {
+    "id": "VT-DEMO-101-S06",
+    "requirement": "Unauthorized users cannot invite members",
+    "risk": "authorization",
+    "priority": "P0",
+    "preconditions": [
+      "Use isolated synthetic test data",
+      "Target service is healthy"
+    ],
+    "steps": [
+      "Arrange data for: Unauthorized users cannot invite members",
+      "Execute the relevant API or UI action",
+      "Capture response, state transition, and identifiers",
+      "Verify the resulting system state"
+    ],
+    "expected_result": "Unauthorized users cannot invite members",
+    "automation_candidate": true
+  },
+  {
+    "id": "VT-DEMO-101-S07",
+    "requirement": "Test data can be cleaned up after execution",
+    "risk": "environment contamination",
+    "priority": "P1",
+    "preconditions": [
+      "Synthetic organization and user records exist"
+    ],
+    "steps": [
+      "Delete or reset created test entities",
+      "Query for residual test records"
+    ],
+    "expected_result": "No synthetic records remain after cleanup",
+    "automation_candidate": true
+  }
+]

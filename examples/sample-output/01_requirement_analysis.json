@@ -1,0 +1,18 @@
+{
+  "ticket_id": "VT-DEMO-101",
+  "summary": "Invite a new enterprise user and assign a product license",
+  "interfaces": [
+    "REST API",
+    "Admin Console"
+  ],
+  "acceptance_criteria_count": 6,
+  "identified_risks": [
+    "authorization",
+    "data integrity",
+    "entitlement",
+    "identity/data validation",
+    "workflow state"
+  ],
+  "data_policy": "synthetic-only",
+  "test_objective": "Verify acceptance criteria and high-risk negative paths with traceable evidence."
+}

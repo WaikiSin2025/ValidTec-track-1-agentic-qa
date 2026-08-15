@@ -1,0 +1,174 @@
+{
+  "ticket_id": "VT-DEMO-101",
+  "contract_version": "1.0",
+  "recommended_execution_order": [
+    "VT-DEMO-101-S01",
+    "VT-DEMO-101-S02",
+    "VT-DEMO-101-S03",
+    "VT-DEMO-101-S04",
+    "VT-DEMO-101-S05",
+    "VT-DEMO-101-S06",
+    "VT-DEMO-101-S07"
+  ],
+  "tests": [
+    {
+      "scenario_id": "VT-DEMO-101-S01",
+      "framework": "postman/newman",
+      "priority": "P1",
+      "setup": [
+        "Use isolated synthetic test data",
+        "Target service is healthy"
+      ],
+      "actions": [
+        "Arrange data for: Admin can invite a valid email address",
+        "Execute the relevant API or UI action",
+        "Capture response, state transition, and identifiers",
+        "Verify the resulting system state"
+      ],
+      "assertions": [
+        "Admin can invite a valid email address"
+      ],
+      "evidence": [
+        "request/response or trace",
+        "assertion result",
+        "execution timestamp"
+      ]
+    },
+    {
+      "scenario_id": "VT-DEMO-101-S02",
+      "framework": "postman/newman",
+      "priority": "P1",
+      "setup": [
+        "Use isolated synthetic test data",
+        "Target service is healthy"
+      ],
+      "actions": [
+        "Arrange data for: Invited user is assigned to the selected organization",
+        "Execute the relevant API or UI action",
+        "Capture response, state transition, and identifiers",
+        "Verify the resulting system state"
+      ],
+      "assertions": [
+        "Invited user is assigned to the selected organization"
+      ],
+      "evidence": [
+        "request/response or trace",
+        "assertion result",
+        "execution timestamp"
+      ]
+    },
+    {
+      "scenario_id": "VT-DEMO-101-S03",
+      "framework": "postman/newman",
+      "priority": "P1",
+      "setup": [
+        "Use isolated synthetic test data",
+        "Target service is healthy"
+      ],
+      "actions": [
+        "Arrange data for: Selected role is persisted",
+        "Execute the relevant API or UI action",
+        "Capture response, state transition, and identifiers",
+        "Verify the resulting system state"
+      ],
+      "assertions": [
+        "Selected role is persisted"
+      ],
+      "evidence": [
+        "request/response or trace",
+        "assertion result",
+        "execution timestamp"
+      ]
+    },
+    {
+      "scenario_id": "VT-DEMO-101-S04",
+      "framework": "postman/newman",
+      "priority": "P0",
+      "setup": [
+        "Use isolated synthetic test data",
+        "Target service is healthy"
+      ],
+      "actions": [
+        "Arrange data for: Selected license is active",
+        "Execute the relevant API or UI action",
+        "Capture response, state transition, and identifiers",
+        "Verify the resulting system state"
+      ],
+      "assertions": [
+        "Selected license is active"
+      ],
+      "evidence": [
+        "request/response or trace",
+        "assertion result",
+        "execution timestamp"
+      ]
+    },
+    {
+      "scenario_id": "VT-DEMO-101-S05",
+      "framework": "postman/newman",
+      "priority": "P0",
+      "setup": [
+        "Use isolated synthetic test data",
+        "Target service is healthy"
+      ],
+      "actions": [
+        "Arrange data for: Duplicate invitation is rejected",
+        "Execute the relevant API or UI action",
+        "Capture response, state transition, and identifiers",
+        "Verify the resulting system state"
+      ],
+      "assertions": [
+        "Duplicate invitation is rejected"
+      ],
+      "evidence": [
+        "request/response or trace",
+        "assertion result",
+        "execution timestamp"
+      ]
+    },
+    {
+      "scenario_id": "VT-DEMO-101-S06",
+      "framework": "postman/newman",
+      "priority": "P0",
+      "setup": [
+        "Use isolated synthetic test data",
+        "Target service is healthy"
+      ],
+      "actions": [
+        "Arrange data for: Unauthorized users cannot invite members",
+        "Execute the relevant API or UI action",
+        "Capture response, state transition, and identifiers",
+        "Verify the resulting system state"
+      ],
+      "assertions": [
+        "Unauthorized users cannot invite members"
+      ],
+      "evidence": [
+        "request/response or trace",
+        "assertion result",
+        "execution timestamp"
+      ]
+    },
+    {
+      "scenario_id": "VT-DEMO-101-S07",
+      "framework": "postman/newman",
+      "priority": "P1",
+      "setup": [
+        "Synthetic organization and user records exist"
+      ],
+      "actions": [
+        "Delete or reset created test entities",
+        "Query for residual test records"
+      ],
+      "assertions": [
+        "No synthetic records remain after cleanup"
+      ],
+      "evidence": [
+        "request/response or trace",
+        "assertion result",
+        "execution timestamp"
+      ]
+    }
+  ],
+  "release_gate": "All P0 tests must pass; P1 failures require QA review."
+}

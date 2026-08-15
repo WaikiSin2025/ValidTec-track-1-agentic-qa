@@ -1,0 +1,18 @@
+{
+  "id": "VT-DEMO-101",
+  "title": "Invite a new enterprise user and assign a product license",
+  "description": "An organization administrator can invite a user by email, assign the Analyst role and a product license, and the user can see an active onboarding state after accepting the invitation.",
+  "acceptance_criteria": [
+    "Admin can invite a valid email address",
+    "Invited user is assigned to the selected organization",
+    "Selected role is persisted",
+    "Selected license is active",
+    "Duplicate invitation is rejected",
+    "Unauthorized users cannot invite members"
+  ],
+  "interfaces": [
+    "REST API",
+    "Admin Console"
+  ],
+  "data_classification": "synthetic-only"
+}
